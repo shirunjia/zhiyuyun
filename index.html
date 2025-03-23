@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通海大学官网</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+
+        /* 头部样式 */
+        .header {
+            background: #b31b23;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .university-name {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .english-name {
+            font-size: 1.2em;
+            letter-spacing: 2px;
+        }
+
+        /* 导航栏 */
+        .nav-container {
+            background: #2a2a2a;
+            padding: 15px 0;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-item {
+            margin: 0 20px;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        .nav-link:hover {
+            background: #b31b23;
+            border-radius: 4px;
+        }
+
+        /* 主体内容 */
+        .main-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* 特色横幅 */
+        .feature-banner {
+            width: 100%;
+            height: 400px;
+            background: url('images/campus-banner.jpg') center/cover;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* 新闻模块 */
+        .news-section {
+            margin: 40px 0;
+        }
+
+        .news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #b31b23;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .news-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-date {
+            color: #b31b23;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-item {
+                margin: 5px;
+            }
+            
+            .feature-banner {
+                height: 250px;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <img src="images/logo.png" alt="校徽" width="80" style="margin-bottom: 15px;">
+        <div class="university-name">通海大学</div>
+        <div class="english-name">TONGHAI UNIVERSITY</div>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav class="nav-container">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+        <li class="nav-item"><a href="overview.html" class="nav-link">校情总览</a></li>
+        <li class="nav-item"><a href="departments.html" class="nav-link">机构设置</a></li>
+        <li class="nav-item"><a href="education.html" class="nav-link">人才培养</a></li>
+        <li class="nav-item"><a href="admission.html" class="nav-link">招生就业</a></li>
+    </ul>
+</nav>
+
+    <!-- 主体内容 -->
+    <main class="main-container">
+        <!-- 校园横幅 -->
+        <div class="feature-banner"></div>
+
+        <!-- 新闻版块 -->
+        <section class="news-section">
+            <div class="news-header">
+                <h2>通大要闻</h2>
+                <a href="news.html" class="more-link">更多 &gt;</a>  <!-- 新增实际路径 -->
+</div>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">2025-03-22</div>
+                    <h3>聚力拓岗优服务 春季攻坚促就业</h3>
+                    <p>我校成功举办2025届学生录取工作，吸引20000000000余人参加...</p>
+                    <img src="images/news/recruitment.jpg" alt="招聘会" style="width:100%; margin-top:15px;">
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">2025-03-21</div>
+                    <h3>校领导参加高校工作会议</h3>
+                    <p>校长参加教育部直属高校工作咨询委员会第1次全体会议...</p>
+                    <img src="images/news/meeting.jpg" alt="工作会议" style="width:100%; margin-top:15px;">
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">2025-03-18</div>
+                    <h3>人才培养联盟会议</h3>
+                    <p>史书记参加玉溪高校人才培养联盟成立一周年大会...</p>
+                    <img src="images/news/conference.jpg" alt="联盟会议" style="width:100%; margin-top:15px;">
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer style="background: #2a2a2a; color: white; text-align: center; padding: 30px 20px; margin-top: 50px;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <img src="images/campus-map.jpg" alt="校区地图" style="width:100%; max-width:600px; margin:20px 0;">
+            <p>地址：云南省玉溪市通海县礼乐西路580号</p>
+            <p>电话：0877-12345678 | 邮箱：contact@thu.edu.cn</p>
+            <p>© 2025 通海大学 版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>
