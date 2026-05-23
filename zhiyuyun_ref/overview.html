@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校情总览 - 通海大学</title>
+    <style>
+        /* 保持与首页相同的样式 */
+        /* 可提取为公共CSS文件 */
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Microsoft YaHei'; }
+        .university-header { background:#b31b23; padding:15px 30px; display:flex; justify-content:space-between; }
+        /* 其他样式同首页... */
+        
+        /* 页面特有样式 */
+        .history-timeline {
+            margin: 2rem 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .timeline-item {
+            padding: 15px;
+            border-left: 3px solid #b31b23;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 统一头部 -->
+    <header class="university-header">
+        <a href="index.html" class="chinese-name">通海大学</a>
+        <div class="english-name">TONG HAI UNIVERSITY</div>
+    </header>
+
+    <!-- 统一导航 -->
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+            <li class="nav-item"><a href="overview.html" class="nav-link active">校情总览</a></li>
+            <!-- 其他导航项... -->
+        </ul>
+    </nav>
+
+    <!-- 页面内容 -->
+    <div class="main-content">
+        <h1 class="page-title">校情总览</h1>
+        
+        <div class="content-section">
+            <h2>学校简介</h2>
+            <p>通海大学是通海县创办的第一所综合性大学，其历史可以追溯到2025年...</p>
+            <img src="images/history.jpg" alt="历史照片" class="content-img">
+        </div>
+
+        <div class="history-timeline">
+            <h3>历史沿革</h3>
+            <div class="timeline-item">
+                <h4>2024年</h4>
+                <p>河西公学成立</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2025年</h4>
+                <p>合并成立通海大学</p>
+            </div>
+            <!-- 更多时间线项目... -->
+        </div>
+    </div>
+
+    <!-- 统一页脚 -->
+    <footer class="footer">
+        <!-- 同首页页脚内容 -->
+    </footer>
+</body>
+</html>
