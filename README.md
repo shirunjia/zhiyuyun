@@ -4,7 +4,7 @@
   ▎ 基于 React Native / Expo 的智慧校园移动应用，集成课程管理、成绩查询、校园资讯与个人中心等功能。
 
   ---
-  README 正文（可选）：
+  README ：
 
   # 智育云
 
@@ -31,3 +31,20 @@
   - TypeScript
 
   ---
+1. 添加截图/演示图
+  最能让访客快速了解项目，放 2-3 张手机截图或 GIF。
+
+  2. 添加项目结构树
+  ├── app/              # 页面路由
+  │   ├── index.tsx     # 首页
+  │   ├── learn/        # 学习模块
+  │   ├── campus/       # 校园模块
+  │   └── profile/      # 个人中心
+  ├── components/       # 通用组件
+  ├── data/             # Mock 数据
+  ├── hooks/            # 自定义 Hooks
+  └── utils/            # 工具函数 & 主题
+
+  3. 补充环境要求
+  Node.js >= 18
+  npm >= 9
